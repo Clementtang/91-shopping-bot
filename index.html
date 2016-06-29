@@ -12,6 +12,24 @@
 <script>
 Smooch.init({ appToken: '780kqfru8fv912wyxwg96hf7l' });
 </script>
+<!-- FB SDK -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '571086969727183',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <style type="text/css">
 body {
@@ -49,6 +67,7 @@ background-image:url('/pix/samples/bubble1.gif');
 }
 </style>
 
+<!-- Send to Messenger Btn -->
 <div class="fb-send-to-messenger" 
   messenger_app_id="571086969727183" 
   page_id="225226247849267" 
@@ -63,25 +82,6 @@ background-image:url('/pix/samples/bubble1.gif');
 <!-- Bootstrap 4 Alpha JS -->
 <!-- IMPORTANT: Don't use this .js file in production. Use Bootstrap 3 until Bootstrap 4.0.0 is released. -->
 <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
-
-<!-- FB SDK -->
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '571086969727183',
-      xfbml      : true,
-      version    : 'v2.6'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
 
 </body>
 </html>
